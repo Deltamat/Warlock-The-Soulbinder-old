@@ -9,6 +9,7 @@ namespace Warlock_The_Soulbinder
     /// </summary>
     public class Game1 : Game
     {
+        //killroy was here
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 

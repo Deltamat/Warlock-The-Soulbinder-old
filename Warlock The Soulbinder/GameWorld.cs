@@ -9,10 +9,25 @@ namespace Warlock_The_Soulbinder
     /// </summary>
     public class GameWorld : Game
     {
-        //killroy was here
-        //overlord was also here
-        GraphicsDeviceManager graphics;
+        GraphicsDeviceManager graphics; 
         SpriteBatch spriteBatch;
+
+        static GameWorld instance;
+        static public GameWorld Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new GameWorld();
+                }
+                return instance;
+            }
+            set
+            {
+                instance = value;
+            }
+        }
 
         public GameWorld()
         {

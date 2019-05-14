@@ -14,7 +14,7 @@ namespace Warlock_The_Soulbinder
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            using (var game = new GameWorld())
                 game.Run();
         }
     }
